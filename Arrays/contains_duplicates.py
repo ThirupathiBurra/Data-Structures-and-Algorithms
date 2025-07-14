@@ -16,7 +16,7 @@ if __name__ == "__main__":
     arr = [1,2,3,1]
     solution = Solution()
     result = solution.ContainsDuplicates(arr)
-    if result == True:
+    if result:
         print("Yes the array contains the duplicates")
     else:
         print("NO,The array does not contains any duplicates")

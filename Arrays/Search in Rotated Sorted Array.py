@@ -26,8 +26,8 @@ class Solution:
                 return mid
             
             #Checking the left half first
-            elif arr[low] <= nums[mid]:
-                #checking wheather the element is present or not
+            elif arr[low] <= arr[mid]:
+                #checking wheather the element is present or not in the left half
                 if arr[low] <= target and target <= arr[mid]:
                     high = mid-1
                 else:
@@ -51,3 +51,11 @@ if __name__ == "__main__":
         print("Target not there in the array")
     else:
         print(f"The target found at index {result}")
+
+
+"""
+
+Time Complexity : O(logn)
+Space Complexity : O(1)
+
+"""
