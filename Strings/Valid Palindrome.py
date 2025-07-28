@@ -27,6 +27,7 @@ class Solution:
             if c.isalnum():
                 newStr += c.lower()
         return newStr == newStr[::-1]
+    
         s = s.lower()
         n = len(s)
         l = 0

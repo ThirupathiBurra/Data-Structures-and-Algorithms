@@ -18,6 +18,10 @@ Explanation: The above elevation map (black section) is represented by array [0,
     - It can be solved by using this 'min(lmax,rmax)-height[i]' formula.
         - it can be used in all approaches.
     - We have to use two pointers, one from left to right and one from right to left.
+    - The minimum of the left and right max will give the maximum water that can be stored.
+    - The left max will always be less than the right max.
+    - If the left max is less than the right max then we have to add the difference to the ans.
+    - If the right max is less than the left max then we have to add the difference to the ans.
     
     
     Time Complexity : O(n)

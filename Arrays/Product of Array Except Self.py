@@ -14,6 +14,10 @@ Example 1:
 Input: nums = [1,2,3,4]
 Output: [24,12,8,6]
 
+My Reflection :
+    The idea is to find the prefix and postfix product of the array and then multiply them to get the result
+    
+
 """
 from typing import List
 class Solution:

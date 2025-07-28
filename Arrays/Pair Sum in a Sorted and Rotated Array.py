@@ -15,3 +15,34 @@ Explanation: There is no such pair exists in arr[] which sums to target.
 
 """
 
+class Solution:
+    def PairSum(self,arr,target):
+        l, r = 0, len(arr)-1
+        i=0
+
+        for i in range(len(arr)):
+
+            if arr[i] > arr[i+1]:
+                i = i + 1
+                break
+        # if arr[i] > arr[i+1]:
+        #     i = i+1
+        
+        r = i
+        l = (i+1)%len(arr)
+
+        while l != r:
+            if arr[l] + arr[r] == target:
+                return True
+            elif arr[l] + arr[r] < target:
+                l = (l+1)%len(arr)
+            else:
+                r = (r-1)%len(arr)
+        return False
+    
+#Example
+if __name__ == '__main__':
+    arr = [7, 9, 2, 3, 5]
+    target = 7
+    obj = Solution()
+    print(obj.PairSum(arr,target))
