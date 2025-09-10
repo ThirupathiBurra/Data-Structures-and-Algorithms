@@ -34,7 +34,7 @@ class Solution:
 #Example
 if __name__ == "__main__":
     nums = [3,1,2]
-    k=2
+    k=3
     solution = Solution()
     result = solution.result(nums,k)
     print(result)
